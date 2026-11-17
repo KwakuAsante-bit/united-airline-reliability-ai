@@ -1,0 +1,9 @@
+{
+  "text": "# January 2025 | United Airlines Monthly Reliability & Competitive Assessment\n\n## Executive Summary\n\nUnited completed 60,668 flights in January 2025 with an 82.37% on-time rate, ranking 5th overall across 14 airlines analyzed. On shared routes, United ranked 3rd with a +3.53 percentage-point advantage over route peers, indicating stronger competitive positioning than the headline ranking alone suggests.\n\n## Monthly Performance Scorecard\n\n| Metric | January 2025 | MoM | QoQ | YoY |\n|---|---|---|---|---|\n| On-time performance | 82.37% (60,668 flights) | \u2014 | \u2014 | \u2014 |\n| Cancellation rate | 1.92% (of 62,007 scheduled) | \u2014 | \u2014 | \u2014 |\n| Overall ranking | 5th of 14 airlines | \u2014 | \u2014 | \u2014 |\n| Shared-route ranking | 3rd of airlines on shared routes | \u2014 | \u2014 | \u2014 |\n| Performance vs. route peers | +3.53 pp above competitor benchmark (79.09%) | \u2014 | \u2014 | \u2014 |\n\n## Priority Opportunities\n\n| Route | United On-Time | Competitor On-Time | Gap (pp) | Next Step |\n|---|---|---|---|---|\n| DEN\u2013ORD | 68.99% | 80.10% | \u221211.11 | Monitor monthly; investigate if gap persists across reporting periods |\n| EWR\u2013LAX | 78.23% | 89.01% | \u221210.79 | Monitor monthly; investigate if gap persists across reporting periods |\n\n*Reporting note: January 2025 is the only available period. Historical comparisons are unavailable. Overall and shared-route rankings use different methods and samples. Route opportunities remain preliminary pending further validation.*",
+  "stop_reason": "end_turn",
+  "input_tokens": 1803,
+  "output_tokens": 417,
+  "model": "claude-sonnet-4-6",
+  "generated_at": "2026-11-14T00:24:02+00:00",
+  "prompt_sha256": "0758910f1a46"
+}

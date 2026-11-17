@@ -1,0 +1,21 @@
+Reported Metric,Verified Value,Python Source,Calculation,Source Inputs
+Reporting month,January 2025,BTS flight month,Source dataset period,January 2025
+United overall on-time rank,5,airline_performance,Rank airlines by completed-flight on-time rate,14 airlines
+United scheduled flights,62007,airline_performance,Count of scheduled flight records,"United Airlines, January 2025"
+United on-time rate,82.37%,airline_performance,OnTimeFlights / CompletedFlights × 100,"On-time: 49,974; completed: 60,668"
+United cancellation rate,1.92%,airline_performance,Cancelled / Scheduled × 100,"United Airlines, January 2025"
+United route-relative rank,3,adjusted_performance,Rank route-relative performance gaps,Qualifying shared routes
+United shared-route gap,+3.53 pp,adjusted_performance,ActualRate − CompetitorBenchmark,Qualified completed flights
+United qualifying shared-route flights,47121,adjusted_performance,Count completed flights in qualifying sample,Shared-route method
+United airport exposure gap,-1.16 pp,network_exposure,AirportBenchmark − NationalPeerRate,Leave-one-airline-out airport peers
+Airport exposure Pearson r,+0.44,network_exposure / airline_performance,Pearson correlation,14 airlines
+Volume Pearson r / p,+0.298 / 0.3004,airline_performance,Pearson association and p-value,14 airlines
+Airlines with changed shared-route rank,13,ranking_comparison,Count of nonzero Rank Change,14 airlines
+DEN-ORD on-time rates,68.99% / 80.10%,stat_results,On-time / completed flights × 100,United / same-route competitors
+DEN-ORD gap,-11.11 pp,stat_results,United rate − competitor rate,Same direction and qualifying route
+DEN-ORD hypothetical additional arrivals,28.7,stat_results,United completed × (peer rate − United rate),"Hypothetical, not causal"
+DEN-ORD adjusted p-value,0.1006,stat_results,Benjamini–Hochberg correction,All eligible United routes
+EWR-LAX on-time rates,78.23% / 89.01%,stat_results,On-time / completed flights × 100,United / same-route competitors
+EWR-LAX gap,-10.79 pp,stat_results,United rate − competitor rate,Same direction and qualifying route
+EWR-LAX hypothetical additional arrivals,26.7,stat_results,United completed × (peer rate − United rate),"Hypothetical, not causal"
+EWR-LAX adjusted p-value,0.1937,stat_results,Benjamini–Hochberg correction,All eligible United routes

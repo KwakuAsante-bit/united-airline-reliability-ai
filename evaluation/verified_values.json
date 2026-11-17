@@ -1,0 +1,106 @@
+{
+  "period": "January 2025",
+  "audience": "United Airlines executives",
+  "industry_findings": {
+    "airlines_analyzed": 14,
+    "airport_exposure_pearson_r": 0.44,
+    "flight_volume_pearson_r": 0.298,
+    "flight_volume_pearson_p": 0.3004,
+    "flight_volume_spearman_r": 0.174,
+    "flight_volume_spearman_p": 0.5528,
+    "airlines_changing_rank_on_shared_routes": 13,
+    "ranking_confidence_example": {
+      "alaska_rank": 4,
+      "alaska_on_time_rate": 82.42,
+      "alaska_ci_95": [
+        81.86,
+        82.97
+      ],
+      "alaska_completed_flights": 17847,
+      "united_rank": 5,
+      "united_on_time_rate": 82.37,
+      "united_ci_95": [
+        82.07,
+        82.67
+      ],
+      "united_completed_flights": 60668
+    }
+  },
+  "united_overall": {
+    "overall_rank": 5,
+    "scheduled_flights": 62007,
+    "completed_flights": 60668,
+    "on_time_rate": 82.37,
+    "cancellation_rate": 1.92
+  },
+  "united_airport_exposure": {
+    "airport_exposure_gap_pp": -1.16,
+    "airport_mix_benchmark_pct": 79.9,
+    "national_peer_benchmark_pct": 81.06,
+    "covered_flights_pct": 99.8
+  },
+  "united_route_comparison": {
+    "route_relative_rank": 3,
+    "performance_gap_pp": 3.53,
+    "actual_rate_pct": 82.62,
+    "competitor_benchmark_pct": 79.09,
+    "completed_flights_in_sample": 47121
+  },
+  "priority_routes": [
+    {
+      "route": "DEN-ORD",
+      "united_flights": 258,
+      "united_on_time_rate": 68.99,
+      "competitor_on_time_rate": 80.1,
+      "performance_gap_pp": -11.11,
+      "potential_additional_on_time_flights": 28.7
+    },
+    {
+      "route": "EWR-LAX",
+      "united_flights": 248,
+      "united_on_time_rate": 78.23,
+      "competitor_on_time_rate": 89.01,
+      "performance_gap_pp": -10.79,
+      "potential_additional_on_time_flights": 26.7
+    }
+  ],
+  "leadership_strategy": {
+    "retain": [
+      "Flight volume",
+      "Route network",
+      "Airport operations"
+    ],
+    "refine": [
+      "Adopt more meaningful performance measures",
+      "Monitor competitive performance monthly",
+      "Pinpoint targeted improvement opportunities"
+    ]
+  },
+  "limitations": [
+    "Only January 2025 is available; no verified MoM, QoQ or YoY trends",
+    "Overall and route-relative rankings use different measures and samples",
+    "Airport exposure and volume correlations are associations, not causes",
+    "Volume sample includes 14 airlines; a nonsignificant result does not prove there is no relationship",
+    "Priority route gaps are preliminary after multiple-testing correction",
+    "Potential additional on-time flights are hypothetical, not forecasts"
+  ],
+  "statistical_evaluation": {
+    "routes_tested": 450,
+    "adjustment_method": "Benjamini-Hochberg FDR",
+    "significance_threshold": 0.05,
+    "priority_routes": [
+      {
+        "route": "DEN-ORD",
+        "performance_gap_pp": -11.11,
+        "adjusted_p_value": 0.1006,
+        "statistically_significant": false
+      },
+      {
+        "route": "EWR-LAX",
+        "performance_gap_pp": -10.79,
+        "adjusted_p_value": 0.1937,
+        "statistically_significant": false
+      }
+    ]
+  }
+}
