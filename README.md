@@ -87,7 +87,7 @@ human must review a report before it is released.
 - One month of data (January 2025): no trends, and winter weather may affect airlines unevenly.
 - Airport exposure uses departure airports only, and it is an association (r = +0.44, p ≈ 0.11, n = 14), not a cause.
 - The evaluation is small: 194 claims, and 7 of the 8 errors come from one sentence template.
-- The governance thresholds were chosen and tested on the same 12 reports; they need re-testing on new months.
+- We set and tested the governance thresholds using the same 12 reports. Testing them on reports from future months would show whether they still catch unsupported claims and how much human review they require.
 - The Wilson CIs and the MDD treat claims as independent, so they are approximate.
 - Results apply to Claude Sonnet 4.6 and these prompts; a model or prompt change needs a new evaluation.
 
