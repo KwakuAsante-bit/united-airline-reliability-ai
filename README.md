@@ -39,8 +39,11 @@ human must review a report before it is released.
 - **Size:** 539,747 scheduled domestic flights, 14 reporting airlines, 329 origin airports.
 - **Unit of observation:** one scheduled flight. The AI evaluation's unit is one claim (a sentence or table row) in an AI report.
 - **Access:** the original BTS download (27 MB zip) is included in this repo, and the notebook reads it directly.
-  The 243 MB extracted CSV is not committed (too large for GitHub). To download it yourself, choose January 2025 on the
-  page above with "Prezipped File" checked and save the zip into the repo's top folder.
+  The 243 MB extracted CSV is not committed (too large for GitHub).
+- **Direct download link** (the same January 2025 zip from BTS):
+  <https://transtats.bts.gov/PREZIP/On_Time_Reporting_Carrier_On_Time_Performance_1987_present_2025_1.zip>
+  Save it into the repo's top folder without unzipping. BTS may revise past months, so a fresh download can differ
+  slightly from the copy in this repo (downloaded in 2025); the committed zip reproduces our results exactly.
 
 ## Workflow
 
