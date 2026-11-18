@@ -1,14 +1,21 @@
-# Are Airline Reliability Rankings Misleading? An AI-Drafted Monthly Report for United Airlines
+# Can We Trust AI to Write Executive Reports?
+
+*AI-assisted airline executive reporting: a United Airlines case study with January 2025 BTS data*
 
 Alex Asante and Faye Williams
 INFO 4340, Fall 2026, University of Denver
 
 ## Overview
 
-Airline on-time rankings compare carriers that fly very different airports and routes. We used one month of U.S. DOT
-flight data to ask whether United's headline ranking tells the full story, and built a workflow in which Claude drafts a
-one-page monthly executive report from figures that Python has already verified. We then measured how often the AI's
-claims are unsupported, and set governance rules for when a human must review the report before it reaches leadership.
+**Business question:** can generative AI reliably turn verified airline performance data into executive reports that
+give leadership useful insight without adding unsupported claims?
+
+We built a workflow in which Python calculates every figure, Claude drafts a one-page monthly executive report for
+United Airlines from those verified figures, and a human reviews the report before it reaches leadership. The airline
+analysis is the case study that supplies the evidence: airline on-time rankings compare carriers that fly very
+different airports and routes, so we used one month of U.S. DOT flight data to test whether United's headline ranking
+tells the full story. We then measured how often the AI's claims are unsupported, and set governance rules for when a
+human must review a report before it is released.
 
 ## Key findings
 
@@ -47,8 +54,10 @@ claims are unsupported, and set governance rules for when a human must review th
 4. **Evaluation:** 4 prompt variants × 3 runs = 12 reports, split into 194 claims. Both partners labeled every claim
    independently (κ), then reached consensus; we measured the error rate (Wilson CI), checker precision/recall/F1
    (report-level bootstrap), cost, and the minimum detectable difference between variants.
-5. **Recommendation:** use the AI draft only under three back-tested governance rules (claim review, a report release
-   gate and prompt escalation); see the governance memo.
+5. **Recommendation:** launch the workflow as a supervised pilot, using the AI draft only under three back-tested
+   governance rules (claim review, a report release gate and prompt escalation). The governance memo also proposes a
+   quarterly review against a target of at least 98% supported claims before human correction; the initial sample was
+   95.9%, and this target has not yet been tested quarterly.
 
 ## Repo contents
 
@@ -81,6 +90,7 @@ claims are unsupported, and set governance rules for when a human must review th
 
 ## AI use
 
-We used Claude to help develop Python code, draft executive reports from verified airline data, and propose governance rules. 
-We used Codex to review the notebook, evaluation methods, governance wording, and presentation materials, including speaker notes 
-and explanations of results.
+We used Claude Code to help build the Python notebook and Claude Sonnet 4.6 to generate the reports evaluated in this
+project. ChatGPT assisted with governance and presentation development, while Codex assisted with project reviews,
+speaker notes, and drafting and revising the written summary; our individual AI use logs document each partner's
+decisions and verification.
